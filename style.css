@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --text: #55595b;
+  --button: #1090D8;
+  --normal-text: #6e6c73;
+}
+.geometry-blog{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E8F4FC;
+  margin-top: 25px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.geometry-title{
+font-weight:bold;
+color: var(--text);
+margin-bottom: 0;
+}
+.geometry-text{
+  font-size: small;
+  margin-top: 0;
+  color: var(--normal-text);
+  font-weight: 500;
+}
+.btn-blog{
+  background-color: var(--button);
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.68em;
+  font-weight: 600;
+}
+@media  screen and (max-width:510px) {
+  .geometry-upper {
+    margin: 10px;
+  }
+}
