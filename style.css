@@ -37,6 +37,21 @@ margin-bottom: 0;
   font-size: 0.68em;
   font-weight: 600;
 }
+.card-body-inner{
+  font-size: 0.82em;
+  /* margin-right: 5px; */
+}
+.btn-calculate {
+  font-size: large;
+  font-weight: 600;
+  border-radius: 0.20rem;
+}
+@media screen and (max-width:420px) {
+  .card-body-inner{
+    font-size: 0.72em;
+  }
+  
+}
 @media  screen and (max-width:510px) {
   .geometry-upper {
     margin: 10px;
