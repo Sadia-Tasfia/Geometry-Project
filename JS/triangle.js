@@ -27,6 +27,8 @@ const btns = document
 
     // totalAmount.innerText = currentTotalAmount;
     // currentTotalAmount.style.display ="block"
+
+    // Show the result and name in different card
     const tagName1 = document.getElementById("tagName1");
     tagName1.innerText = "1.Triangle";
 
@@ -36,6 +38,20 @@ const btns = document
     } else{
       result1.innerText = "Error❌";
     }
+
+    // convert the result into meter
+    document
+      .getElementById("convertBtn1")
+      .addEventListener("click", function () {
+        const result1 = document.getElementById("result1");
+        const meter = equation / 100;
+        if (equation > 0) {
+          result1.innerText = meter + "m²";
+        } else {
+          result1.innerText = "Error❌";
+        }
+      });
+
     // clear the input field
     inputField1.value = "";
     inputField2.value = "";

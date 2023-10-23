@@ -36,8 +36,16 @@ const btn = document
     }
 
     // convert the result into meter
-
-
+    document.getElementById("convertBtn2").addEventListener('click', function(){
+      const result2 = document.getElementById("result2");
+      const meter = equation / 100;
+      if (equation > 0) {
+        result2.innerText = meter + "m²";
+      } else {
+        result2.innerText = "Error❌";
+      }
+    });
+    
     // clear the input field
     inputField3.value = "";
     inputField4.value = "";

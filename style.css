@@ -46,7 +46,7 @@ margin-bottom: 0;
   font-weight: 600;
   border-radius: 0.20rem;
 }
-.convertBtn {
+#convertBtn1 , #convertBtn2 {
   background-color: var(--button);
   padding: 0.15em 0.40em;
   font-size: medium;
