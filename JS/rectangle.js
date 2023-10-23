@@ -19,10 +19,24 @@ const btn = document
     const equation = newInputField3 * newInputField4;
     if (equation > 0) {
       // set the value
-      totalAmount2.innerText = equation;
+      totalAmount2.innerText = equation + "cm²";
     } else {
       totalAmount2.innerText = "error❌";
     }
+    
+    // Show the value & name in different card
+    const tagName2 = document.getElementById("tagName2");
+    tagName2.innerText = "2.Rectangle"
+
+    const result2 = document.getElementById("result2");
+    if (equation > 0) {
+      result2.innerText = equation + "cm²";
+    } else {
+      result2.innerText = "Error❌";
+    }
+
+    // convert the result into meter
+
 
     // clear the input field
     inputField3.value = "";

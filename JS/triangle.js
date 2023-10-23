@@ -19,15 +19,23 @@ const btns = document
     const equation = 0.5 * newInputField1 * newInputField2;
     if(equation>0){
       // set the value
-      totalAmount.innerText = equation;
+      totalAmount.innerText = equation + "cm²";
     }else {
-      totalAmount.innerText = "error❌";
+      totalAmount.innerText = "Error❌";
     }
     // const currentTotalAmount = equation + previousTotalAmount;
 
     // totalAmount.innerText = currentTotalAmount;
     // currentTotalAmount.style.display ="block"
+    const tagName1 = document.getElementById("tagName1");
+    tagName1.innerText = "1.Triangle";
 
+    const result1 = document.getElementById("result1");
+    if(equation > 0) {
+      result1.innerText = equation + "cm²";
+    } else{
+      result1.innerText = "Error❌";
+    }
     // clear the input field
     inputField1.value = "";
     inputField2.value = "";
